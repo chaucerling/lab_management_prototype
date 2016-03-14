@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <title>Default title</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#navbar-memu" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand">智能机房管理系统</a>
+        </div>
+        <div id="navbar-memu" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="order.html">预约</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" class="dropdown-toggle">教师菜单<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="teacher_order.html">我的预约</a></li>
+                <li><a href="teacher_schedule.html">我的排课</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" class="dropdown-toggle">管理员菜单<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="order_list.html">预约列表</a></li>
+                <li><a href="lab_list.html">机房列表</a></li>
+                <li><a href="summary.html">排课总表</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>我的预约</h1>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>预约编号</th>
+            <th>课程代码</th>
+            <th>课程名称</th>
+            <th>实验课性质</th>
+            <th>是否独立设课</th>
+            <th>预约状态</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>001</td>
+            <td>155172</td>
+            <td>数字逻辑</td>
+            <td>计划内</td>
+            <td>否</td>
+            <td>审核中</td>
+            <td><a type="button" href="order_detail.html" class="btn btn-primary">查看详情</a>
+              <button type="button" class="btn btn-danger">取消预约</button>
+            </td>
+          </tr>
+          <tr>
+            <td>002</td>
+            <td>155173</td>
+            <td>数字逻辑2</td>
+            <td>计划内</td>
+            <td>否</td>
+            <td>审核通过</td>
+            <td><a type="button" href="order_detail.html" class="btn btn-primary">查看详情</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="http://cdn.bootcss.com/jquery/1.12.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>

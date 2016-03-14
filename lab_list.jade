@@ -1,0 +1,29 @@
+extends ./layout.jade
+
+block content
+  h1 机房列表
+  button.btn.btn-primary 添加机房
+  table.table.table-bordered
+    thead
+      tr
+        th 实验室编号
+        th 实验楼
+        th 房间
+        th 软件可用位
+        th 硬件可用位
+        th 机房负责人
+        th 备注
+        th 操作
+    tbody
+      tr
+        td b7-133
+        td b7
+        td 133
+        td 85
+        td 0
+        td 
+        td
+        td
+          button.btn.btn-primary(type="button") 修改
+          button.btn.btn-danger(type="button") 删除
+      

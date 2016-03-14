@@ -1,0 +1,44 @@
+extends ./layout.jade
+
+block content
+  h1 机房 b7-133 详情
+  ul
+    li 实验室编号: b7-133
+    li 实验楼: b7
+    li 房间: 133
+    li 软件可用位: 85
+    li 硬件可用位: 0
+    li 机房负责人: 
+    li 备注: 
+  h4 课程安排
+  table.table.table-bordered
+    thead
+      tr
+        th 周次
+        th 星期
+        th 节次时间
+        th 实验楼
+        th 房间/位置
+        th 实验内容
+        th 主讲
+        th 辅导
+        th 上课人数
+        th 开设组数
+        th 年纪、专业、班级
+        th 备注
+    tbody
+      tr
+        //- - for(var i = 0; i < 12; i++)
+        //-   td &nbsp;
+        td 4
+        td 星期四
+        td 5-6节
+        td b7
+        td 331
+        td 数字逻辑
+        td 王小航
+        td 
+        td 84
+        td 40
+        td 2014级软件工程1，2，3，4班
+        td 

@@ -1,0 +1,35 @@
+extends ./layout.jade
+
+block content
+  h1 我的预约
+  table.table.table-bordered
+    thead
+      tr
+        th 预约编号
+        th 课程代码
+        th 课程名称
+        th 实验课性质
+        th 是否独立设课
+        th 预约状态
+        th 操作
+    tbody
+      tr
+        td 001
+        td 155172
+        td 数字逻辑
+        td 计划内
+        td 否
+        td 审核中
+        td
+          a.btn.btn-primary(type="button", href="order_detail.html") 查看详情
+          button.btn.btn-danger(type="button") 取消预约
+      tr
+        td 002
+        td 155173
+        td 数字逻辑2
+        td 计划内
+        td 否
+        td 审核通过
+        td
+          a.btn.btn-primary(type="button", href="order_detail.html") 查看详情
+        
