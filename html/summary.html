@@ -28,6 +28,7 @@
               <ul class="dropdown-menu">
                 <li><a href="order_list.html">预约列表</a></li>
                 <li><a href="lab_list.html">机房列表</a></li>
+                <li><a href="course_list.html">课程列表</a></li>
                 <li><a href="summary.html">排课总表</a></li>
               </ul>
             </li>
@@ -37,7 +38,26 @@
     </nav>
     <div class="container">
       <h1>排课总表</h1>
-      <button class="btn btn-primary">导出</button>
+      <div class="row">
+        <div class="col-sm-3">
+          <button class="btn btn-primary">导出排课总表</button>
+          <div class="input-group">
+            <select class="form-control">
+              <option>b7-133</option>
+              <option>b7-134</option>
+              <option>b7-135</option>
+            </select><span class="input-group-btn"> <span class="input-group-btn"> 
+                <button type="button" class="btn btn-primary">导出机房课表</button></span></span>
+          </div>
+          <div class="input-group">
+            <select class="form-control">
+              <option>张三</option>
+              <option>李四</option>
+            </select><span class="input-group-btn"> 
+              <button type="button" class="btn btn-primary">导出教师课表</button></span>
+          </div>
+        </div>
+      </div>
       <table class="table table-bordered">
         <thead>
           <tr>

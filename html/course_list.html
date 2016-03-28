@@ -37,45 +37,35 @@
       </div>
     </nav>
     <div class="container">
-      <h1>课程 数字逻辑－王小航 详情</h1>
-      <ul>
-        <li>课程代码: 155172</li>
-        <li>课程名称: 数字逻辑</li>
-        <li>实验课性质: 计划内</li>
-        <li>是否独立设课: 否</li>
-      </ul>
-      <h4>课程安排</h4>
+      <h1>课程列表</h1>
+      <button class="btn btn-primary">添加课程</button>
+      <button class="btn btn-primary">批量导入</button>
+      <button class="btn btn-primary">导出</button>
+      <form method="get" action="course_list.xls">
+        <button type="submit" class="btn btn-primary">批量导入的表格格式下载</button>
+      </form>
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>周次</th>
-            <th>星期</th>
-            <th>节次时间</th>
-            <th>实验楼</th>
-            <th>房间/位置</th>
-            <th>实验内容</th>
-            <th>主讲</th>
-            <th>辅导</th>
-            <th>上课人数</th>
-            <th>开设组数</th>
-            <th>年纪、专业、班级</th>
-            <th>备注</th>
+            <th>课程代码</th>
+            <th>课程名称</th>
+            <th>教师姓名</th>
+            <th>课程性质</th>
+            <th>课程类别</th>
+            <th>操作</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>4</td>
-            <td>星期四</td>
-            <td>5-6节</td>
-            <td>b7</td>
-            <td>331</td>
+            <td>155172</td>
             <td>数字逻辑</td>
             <td>王小航</td>
-            <td> </td>
-            <td>84</td>
-            <td>40</td>
-            <td>2014级软件工程1，2，3，4班</td>
-            <td> </td>
+            <td>必修课</td>
+            <td>专业领域课</td>
+            <td>
+              <button type="button" class="btn btn-primary">修改</button>
+              <button type="button" class="btn btn-danger">删除</button>
+            </td>
           </tr>
         </tbody>
       </table>

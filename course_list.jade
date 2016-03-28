@@ -1,37 +1,31 @@
 extends ./layout.jade
 
 block content
-  h1 机房列表
+  h1 课程列表
   
-  button.btn.btn-primary 添加机房
+  button.btn.btn-primary 添加课程
   button.btn.btn-primary 批量导入
   button.btn.btn-primary 导出
-  form(method='get',action='lab_list.xls')
+  form(method='get',action='course_list.xls')
     button.btn.btn-primary(type='submit') 批量导入的表格格式下载
   
   table.table.table-bordered
     thead
       tr
-        th 实验室编号
-        th 实验楼
-        th 房间
-        th 软件可用位
-        th 硬件可用位
-        th 机房负责人
-        th 备注
+        th 课程代码
+        th 课程名称
+        th 教师姓名
+        th 课程性质
+        th 课程类别
         th 操作
     tbody
       tr
-        td b7-133
-        td b7
-        td 133
-        td 85
-        td 0
-        td 
-        td
+        td 155172
+        td 数字逻辑
+        td 王小航
+        td 必修课
+        td 专业领域课
         td
           button.btn.btn-primary(type="button") 修改
           button.btn.btn-danger(type="button") 删除
           
-  
-      

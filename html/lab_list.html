@@ -28,6 +28,7 @@
               <ul class="dropdown-menu">
                 <li><a href="order_list.html">预约列表</a></li>
                 <li><a href="lab_list.html">机房列表</a></li>
+                <li><a href="course_list.html">课程列表</a></li>
                 <li><a href="summary.html">排课总表</a></li>
               </ul>
             </li>
@@ -38,6 +39,11 @@
     <div class="container">
       <h1>机房列表</h1>
       <button class="btn btn-primary">添加机房</button>
+      <button class="btn btn-primary">批量导入</button>
+      <button class="btn btn-primary">导出</button>
+      <form method="get" action="lab_list.xls">
+        <button type="submit" class="btn btn-primary">批量导入的表格格式下载</button>
+      </form>
       <table class="table table-bordered">
         <thead>
           <tr>

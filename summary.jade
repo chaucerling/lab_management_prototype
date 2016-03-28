@@ -2,7 +2,23 @@ extends ./layout.jade
 
 block content
   h1 排课总表
-  button.btn.btn-primary 导出
+  div.row
+    div.col-sm-3
+      button.btn.btn-primary 导出排课总表
+      div.input-group
+        select.form-control
+          option b7-133
+          option b7-134
+          option b7-135
+        span.input-group-btn 
+          span.input-group-btn 
+            button.btn.btn-primary(type="button") 导出机房课表
+      div.input-group
+        select.form-control
+          option 张三
+          option 李四
+        span.input-group-btn 
+          button.btn.btn-primary(type="button") 导出教师课表
   table.table.table-bordered
     thead
       tr
