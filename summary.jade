@@ -2,23 +2,11 @@ extends ./layout.jade
 
 block content
   h1 排课总表
-  div.row
-    div.col-sm-3
-      button.btn.btn-primary 导出排课总表
-      div.input-group
-        select.form-control
-          option b7-133
-          option b7-134
-          option b7-135
-        span.input-group-btn 
-          span.input-group-btn 
-            button.btn.btn-primary(type="button") 导出机房课表
-      div.input-group
-        select.form-control
-          option 张三
-          option 李四
-        span.input-group-btn 
-          button.btn.btn-primary(type="button") 导出教师课表
+  button.btn.btn-primary 导入单条排课
+  button.btn.btn-primary 批量导入排课
+  button.btn.btn-primary 导出排课总表
+  form(method='get')
+    button.btn.btn-primary(type='submit') 批量导入的表格格式下载
   table.table.table-bordered
     thead
       tr
@@ -40,21 +28,22 @@ block content
         th 备注
         th 调停课纪录
     tbody
-      tr
-        td 155172
-        td 数字逻辑
-        td 计划内
-        td 否
-        td 4
-        td 星期四
-        td 5-6节
-        td b7
-        td 331
-        td 数字逻辑
-        td 王小航
-        td 
-        td 84
-        td 40
-        td 2014级软件工程1，2，3，4班
-        td 
-        td 
+      for s in schedules
+        tr
+          td= s.code
+          td= s.name
+          td= s.type
+          td= s.duli
+          td= s.week
+          td= s.day
+          td= s.time
+          td= s.building
+          td= s.room
+          td= s.content
+          td= s.t1
+          td= s.t2
+          td= s.count
+          td= s.group_count
+          td= s.class
+          td= s.remark
+          td 

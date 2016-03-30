@@ -1,0 +1,18 @@
+extends ./layout.jade
+
+block content
+  h1 课表导出
+  ul.nav.nav-tabs
+    li: a(href="export_1.html") 按机房编号归总的课表
+    li.active: a(href="export_2.html") 按课程编号或名称归总的课表
+    li: a(href="export_3.html") 按学院名称归总的总实验课表
+    li: a(href="export_4.html") 教师个人课表
+    li: a(href="export_5.html") 上交学校总表
+  div.row
+    form
+      div.col-sm-3
+        select.form-control
+          option 155172－数字逻辑
+          option 155021－计算机网络
+      button.btn.btn-primary(type="button") 预览课表
+  button.btn.btn-primary(type="button") 导出课表

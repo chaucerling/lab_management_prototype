@@ -1,0 +1,60 @@
+extends ./layout.jade
+
+block content
+  h1 课表导出
+  ul.nav.nav-tabs
+    li: a(href="export_1.html") 按机房编号归总的课表
+    li: a(href="export_2.html") 按课程编号或名称归总的课表
+    li: a(href="export_3.html") 按学院名称归总的总实验课表
+    li: a(href="export_4.html") 教师个人课表
+    li.active: a(href="export_5.html") 上交学校总表
+  button.btn.btn-primary(type="button") 导出课表
+  div
+    table.table.table-bordered
+      thead
+        tr
+          th 报送学院/部门
+          th 实验中心
+          th 课程代码
+          th 课程名称
+          th 实验课性质
+          th 是否独立设课
+          th 排课人
+          th 联系电话
+          th 周次
+          th 星期
+          th 节次时间
+          th 实验楼
+          th 房间/位置
+          th 实验内容
+          th 主讲
+          th 辅导
+          th 上课人数
+          th 开设组数
+          th 年纪、专业、班级
+          th 备注
+          th 调停课纪录
+      tbody
+        for s in schedules
+          tr
+            td 软件学院
+            td 软件学院实验中心
+            td= s.code
+            td= s.name
+            td= s.type
+            td= s.duli
+            td 郭芬
+            td 12345678
+            td= s.week
+            td= s.day
+            td= s.time
+            td= s.building
+            td= s.room
+            td= s.content
+            td= s.t1
+            td= s.t2
+            td= s.count
+            td= s.group_count
+            td= s.class
+            td= s.remark
+            td 

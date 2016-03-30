@@ -1,0 +1,213 @@
+extends ./layout.jade
+
+block content
+  h1 课表导出
+  ul.nav.nav-tabs
+    li.active: a(href="export_1.html") 按机房编号归总的课表
+    li: a(href="export_2.html") 按课程编号或名称归总的课表
+    li: a(href="export_3.html") 按学院名称归总的总实验课表
+    li: a(href="export_4.html") 教师个人课表
+    li: a(href="export_5.html") 上交学校总表
+  div.row
+    form
+      div.col-sm-3
+        select.form-control
+          option b7-133
+          option b7-134
+          option b7-135
+      button.btn.btn-primary(type="button") 预览课表
+  button.btn.btn-primary(type="button") 导出课表
+  div  
+    table.table.table-bordered
+      thead
+        tr
+          th 节次\星期
+          th 星期一
+          th 星期二
+          th 星期三
+          th 星期四
+          th 星期五
+          th 星期六
+          th 星期日
+      tbody
+        tr
+          th 第一节
+          td(rowspan=2) 
+          td(rowspan=2) 
+          td(rowspan=2) 
+          td(rowspan=2) 
+          td(rowspan=2) 
+          td(rowspan=2)
+            p 计算模型与算法技术 
+            p 第11，13周
+            p 杨晓伟
+            p 计算模型与算法技术 
+            p 第10，12周
+            p 黄翰
+            p ACM 
+            p 第4，5周
+            p 郭芬
+            p 高级操作系统及网络编程 
+            p 第3周
+            p 朱金辉
+          td(rowspan=2) 
+            p ACM 
+            p 第3周
+            p 郭芬
+            p 高级操作系统及网络编程 
+            p 第11周
+            p 朱金辉
+        tr
+          th 第二节
+        tr
+          th 第三节
+          td(rowspan=2) 
+          td(rowspan=2) 
+          td(rowspan=2) 
+          td(rowspan=2) 
+          td(rowspan=2) 
+          td(rowspan=2) 
+            p 计算模型与算法技术 
+            p 第11，13周
+            p 杨晓伟
+            p 计算模型与算法技术 
+            p 第10，12周
+            p 黄翰
+            p ACM 
+            p 第4，5周
+            p 郭芬
+            p 高级操作系统及网络编程 
+            p 第3周
+            p 朱金辉
+          td(rowspan=2) 
+            p ACM 
+            p 第3周
+            p 郭芬
+            p 高级操作系统及网络编程 
+            p 第11周
+            p 朱金辉
+        tr
+          th 第四节
+        tr
+          th 第五节
+          td(rowspan=2)
+            p 数据库系统 
+            p 第4，8周
+            p 杨捷
+            p 智能机器人软件平台 
+            p 第5，10，11周
+            p 朱金辉
+          td(rowspan=2) 
+          td(rowspan=2) 
+          td(rowspan=2)
+            p 高级语言程序设计(C++)(下)
+            p 第9，10周
+            p 黄小兵
+          td(rowspan=2)
+            p 数据库系统 
+            p 第10，12周
+            p 杨捷
+          td(rowspan=2) 
+            p 计算模型与算法技术 
+            p 第11，13周
+            p 杨晓伟
+            p 计算模型与算法技术 
+            p 第10，12周
+            p 黄翰
+            p ACM 
+            p 第4，5周
+            p 郭芬
+            p 高级操作系统及网络编程 
+            p 第3周
+            p 朱金辉
+          td(rowspan=2) 
+            p ACM 
+            p 第3周
+            p 郭芬
+            p 高级操作系统及网络编程 
+            p 第11周
+            p 朱金辉
+        tr
+          th 第六节
+        tr
+          th 第七节
+          td(rowspan=2)
+            p 数据库系统 
+            p 第4，8周
+            p 杨捷
+            p 智能机器人软件平台 
+            p 第5，10，11周
+            p 朱金辉
+          td(rowspan=2) 
+          td(rowspan=2) 
+          td(rowspan=2)
+            p 高级语言程序设计(C++)(下)
+            p 第9，10周
+            p 黄小兵
+          td(rowspan=2)
+            p 数据库系统 
+            p 第10，12周
+            p 杨捷
+          td(rowspan=2) 
+            p 计算模型与算法技术 
+            p 第11，13周
+            p 杨晓伟
+            p 计算模型与算法技术 
+            p 第10，12周
+            p 黄翰
+            p ACM 
+            p 第4，5周
+            p 郭芬
+            p 高级操作系统及网络编程 
+            p 第3周
+            p 朱金辉
+          td(rowspan=2) 
+            p ACM 
+            p 第3周
+            p 郭芬
+            p 高级操作系统及网络编程 
+            p 第11周
+            p 朱金辉
+        tr
+          th 第八节
+        tr
+          th 第九节
+          td(rowspan=2) 
+          td(rowspan=2) 
+            p 信息系统安全
+            p 第4，5，6，7周
+            p 陈春华
+          td(rowspan=2) 
+          td(rowspan=2) 
+            p 高级语言程序设计(C++)(下)
+            p 第5，6周
+            p 黄小兵
+            p 高级语言程序设计(C++)(下)
+            p 第9，10周
+            p 黄小兵
+          td(rowspan=2) 
+          td(rowspan=2) 
+          td(rowspan=2) 
+        tr
+          th 第十节
+        tr
+          th 第十一节
+          td(rowspan=2) 
+          td(rowspan=2)
+            p 信息系统安全
+            p 第4，5，6，7周
+            p 陈春华
+          td(rowspan=2) 
+          td(rowspan=2)
+            p 高级语言程序设计(C++)(下)
+            p 第5，6周
+            p 黄小兵
+            p 高级语言程序设计(C++)(下)
+            p 第9，10周
+            p 黄小兵
+          td(rowspan=2) 
+          td(rowspan=2) 
+          td(rowspan=2) 
+        tr
+          th 第十二节
+        

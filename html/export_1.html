@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <title>Default title</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#navbar-memu" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand">智能机房管理系统</a>
+        </div>
+        <div id="navbar-memu" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="order.html">预约</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" class="dropdown-toggle">教师菜单<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="teacher_order.html">我的预约</a></li>
+                <li><a href="teacher_schedule.html">我的排课</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" class="dropdown-toggle">管理员菜单<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="order_list.html">预约列表</a></li>
+                <li><a href="lab_list.html">机房列表</a></li>
+                <li><a href="course_list.html">课程列表</a></li>
+                <li><a href="summary.html">排课总表</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="export_1.html">课表导出</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>课表导出</h1>
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="export_1.html">按机房编号归总的课表</a></li>
+        <li><a href="export_2.html">按课程编号或名称归总的课表</a></li>
+        <li><a href="export_3.html">按学院名称归总的总实验课表</a></li>
+        <li><a href="export_4.html">教师个人课表</a></li>
+        <li><a href="export_5.html">上交学校总表</a></li>
+      </ul>
+      <div class="row">
+        <form>
+          <div class="col-sm-3">
+            <select class="form-control">
+              <option>b7-133</option>
+              <option>b7-134</option>
+              <option>b7-135</option>
+            </select>
+          </div>
+          <button type="button" class="btn btn-primary">预览课表</button>
+        </form>
+      </div>
+      <button type="button" class="btn btn-primary">导出课表</button>
+      <div> 
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>节次\星期</th>
+              <th>星期一</th>
+              <th>星期二</th>
+              <th>星期三</th>
+              <th>星期四</th>
+              <th>星期五</th>
+              <th>星期六</th>
+              <th>星期日</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>第一节</th>
+              <td rowspan="2"> </td>
+              <td rowspan="2"> </td>
+              <td rowspan="2"> </td>
+              <td rowspan="2"> </td>
+              <td rowspan="2"> </td>
+              <td rowspan="2">
+                <p>计算模型与算法技术 </p>
+                <p>第11，13周</p>
+                <p>杨晓伟</p>
+                <p>计算模型与算法技术 </p>
+                <p>第10，12周</p>
+                <p>黄翰</p>
+                <p>ACM </p>
+                <p>第4，5周</p>
+                <p>郭芬</p>
+                <p>高级操作系统及网络编程 </p>
+                <p>第3周</p>
+                <p>朱金辉</p>
+              </td>
+              <td rowspan="2"> 
+                <p>ACM </p>
+                <p>第3周</p>
+                <p>郭芬</p>
+                <p>高级操作系统及网络编程 </p>
+                <p>第11周</p>
+                <p>朱金辉</p>
+              </td>
+            </tr>
+            <tr>
+              <th>第二节</th>
+            </tr>
+            <tr>
+              <th>第三节</th>
+              <td rowspan="2"> </td>
+              <td rowspan="2"> </td>
+              <td rowspan="2"> </td>
+              <td rowspan="2"> </td>
+              <td rowspan="2"> </td>
+              <td rowspan="2"> 
+                <p>计算模型与算法技术 </p>
+                <p>第11，13周</p>
+                <p>杨晓伟</p>
+                <p>计算模型与算法技术 </p>
+                <p>第10，12周</p>
+                <p>黄翰</p>
+                <p>ACM </p>
+                <p>第4，5周</p>
+                <p>郭芬</p>
+                <p>高级操作系统及网络编程 </p>
+                <p>第3周</p>
+                <p>朱金辉</p>
+              </td>
+              <td rowspan="2"> 
+                <p>ACM </p>
+                <p>第3周</p>
+                <p>郭芬</p>
+                <p>高级操作系统及网络编程 </p>
+                <p>第11周</p>
+                <p>朱金辉</p>
+              </td>
+            </tr>
+            <tr>
+              <th>第四节</th>
+            </tr>
+            <tr>
+              <th>第五节</th>
+              <td rowspan="2">
+                <p>数据库系统 </p>
+                <p>第4，8周</p>
+                <p>杨捷</p>
+                <p>智能机器人软件平台 </p>
+                <p>第5，10，11周</p>
+                <p>朱金辉</p>
+              </td>
+              <td rowspan="2"> </td>
+              <td rowspan="2"> </td>
+              <td rowspan="2">
+                <p>高级语言程序设计(C++)(下)</p>
+                <p>第9，10周</p>
+                <p>黄小兵</p>
+              </td>
+              <td rowspan="2">
+                <p>数据库系统 </p>
+                <p>第10，12周</p>
+                <p>杨捷</p>
+              </td>
+              <td rowspan="2"> 
+                <p>计算模型与算法技术 </p>
+                <p>第11，13周</p>
+                <p>杨晓伟</p>
+                <p>计算模型与算法技术 </p>
+                <p>第10，12周</p>
+                <p>黄翰</p>
+                <p>ACM </p>
+                <p>第4，5周</p>
+                <p>郭芬</p>
+                <p>高级操作系统及网络编程 </p>
+                <p>第3周</p>
+                <p>朱金辉</p>
+              </td>
+              <td rowspan="2"> 
+                <p>ACM </p>
+                <p>第3周</p>
+                <p>郭芬</p>
+                <p>高级操作系统及网络编程 </p>
+                <p>第11周</p>
+                <p>朱金辉</p>
+              </td>
+            </tr>
+            <tr>
+              <th>第六节</th>
+            </tr>
+            <tr>
+              <th>第七节</th>
+              <td rowspan="2">
+                <p>数据库系统 </p>
+                <p>第4，8周</p>
+                <p>杨捷</p>
+                <p>智能机器人软件平台 </p>
+                <p>第5，10，11周</p>
+                <p>朱金辉</p>
+              </td>
+              <td rowspan="2"> </td>
+              <td rowspan="2"> </td>
+              <td rowspan="2">
+                <p>高级语言程序设计(C++)(下)</p>
+                <p>第9，10周</p>
+                <p>黄小兵</p>
+              </td>
+              <td rowspan="2">
+                <p>数据库系统 </p>
+                <p>第10，12周</p>
+                <p>杨捷</p>
+              </td>
+              <td rowspan="2"> 
+                <p>计算模型与算法技术 </p>
+                <p>第11，13周</p>
+                <p>杨晓伟</p>
+                <p>计算模型与算法技术 </p>
+                <p>第10，12周</p>
+                <p>黄翰</p>
+                <p>ACM </p>
+                <p>第4，5周</p>
+                <p>郭芬</p>
+                <p>高级操作系统及网络编程 </p>
+                <p>第3周</p>
+                <p>朱金辉</p>
+              </td>
+              <td rowspan="2"> 
+                <p>ACM </p>
+                <p>第3周</p>
+                <p>郭芬</p>
+                <p>高级操作系统及网络编程 </p>
+                <p>第11周</p>
+                <p>朱金辉</p>
+              </td>
+            </tr>
+            <tr>
+              <th>第八节</th>
+            </tr>
+            <tr>
+              <th>第九节</th>
+              <td rowspan="2"> </td>
+              <td rowspan="2"> 
+                <p>信息系统安全</p>
+                <p>第4，5，6，7周</p>
+                <p>陈春华</p>
+              </td>
+              <td rowspan="2"> </td>
+              <td rowspan="2"> 
+                <p>高级语言程序设计(C++)(下)</p>
+                <p>第5，6周</p>
+                <p>黄小兵</p>
+                <p>高级语言程序设计(C++)(下)</p>
+                <p>第9，10周</p>
+                <p>黄小兵</p>
+              </td>
+              <td rowspan="2"> </td>
+              <td rowspan="2"> </td>
+              <td rowspan="2"> </td>
+            </tr>
+            <tr>
+              <th>第十节</th>
+            </tr>
+            <tr>
+              <th>第十一节</th>
+              <td rowspan="2"> </td>
+              <td rowspan="2">
+                <p>信息系统安全</p>
+                <p>第4，5，6，7周</p>
+                <p>陈春华</p>
+              </td>
+              <td rowspan="2"> </td>
+              <td rowspan="2">
+                <p>高级语言程序设计(C++)(下)</p>
+                <p>第5，6周</p>
+                <p>黄小兵</p>
+                <p>高级语言程序设计(C++)(下)</p>
+                <p>第9，10周</p>
+                <p>黄小兵</p>
+              </td>
+              <td rowspan="2"> </td>
+              <td rowspan="2"> </td>
+              <td rowspan="2"> </td>
+            </tr>
+            <tr>
+              <th>第十二节</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="http://cdn.bootcss.com/jquery/1.12.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>
